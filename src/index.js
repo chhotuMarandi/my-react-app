@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-const Elm = (
+const page = (
   <div>
-  <img src="logo.png" alt="" width={200} height={200}/>
+    <img src={require("./logo/react-logo.png")} width={100}/>
     <h1>Fun facts about React</h1>
     <ul>
       <li>was first released in 2013</li>
@@ -13,6 +13,6 @@ const Elm = (
       <li>Powers thousands of enterprise app, including mobile apps</li>
     </ul>
   </div>
-)
+);
 
-ReactDOM.render(Elm, document.getElementById('root'))
+ReactDOM.render(page, document.getElementById('root'))
