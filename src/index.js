@@ -6,7 +6,7 @@ function Header() {
   return (
     <header>
       <nav className='navbar'>
-        <img src={require("./logo/react-logo.png")} width={100} />
+        <img src={require("./logo/react-logo.png")} />
         <ul className = "nav-items">
           <li>Pricing</li>
           <li>About</li>
@@ -19,15 +19,27 @@ function Header() {
 
 function MainContent () {
   return (
-    <div>
+    <div className='main-content'>
       <h1>React Fun Facts</h1>
-      <ol>
+      <ol className='list-item'>
+        <li>React is a JavaScript-based UI development library</li>
+        <li>Facebook and an open-source developer community run it</li>
         <li>
-          React is Not a Framework. Even all of the expert React builders say
-          that React is a Javascript framework
+          Although React is a library rather than a language, it is widely used
+          in web development.
         </li>
-        <li>Virtual DOM is faster than real DOM</li>
-        <li>React Has a Strong Community</li>
+        <li>
+          The library first appeared in May 2013 and is now one of the most
+          commonly used frontend libraries for web development
+        </li>
+        <li>
+          Jordan Walke, a software engineer at Facebook, founded the library in
+          2011, giving it life.
+        </li>
+        <li>
+          React's newsfeed was its debut application in 2011. Later, Instagram
+          picks it up and incorporates it into their platform.
+        </li>
       </ol>
     </div>
   );
@@ -35,7 +47,7 @@ function MainContent () {
 
 function Footer () {
 return (
-  <footer>
+  <footer className='footer'>
     <small> © 2023 All Right Reserved by Chotu Marandi</small>
   </footer>
 );
@@ -43,10 +55,12 @@ return (
 
 function Page () {
   return (
-    <div>
-      <Header />
-      <MainContent />
-      <Footer />
+    <div className='main-container'>
+      <div className='wrapper'>
+        <Header />
+        <MainContent />
+        <Footer />
+      </div>
     </div>
   );
 }
