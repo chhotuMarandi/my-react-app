@@ -1,0 +1,15 @@
+.navbar {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+
+.nav-items{
+ display: flex;
+}
+
+.nav-items li {
+ padding: 1rem;
+ list-style: none;
+ font-size: 1.5rem;
+}
