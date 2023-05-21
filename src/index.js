@@ -20,7 +20,7 @@ function Header() {
 function MainContent () {
   return (
     <div className='main-content'>
-      <h1>React Fun Facts</h1>
+      <h1>React Js Fun Facts</h1>
       <ol className='list-item'>
         <li>React is a JavaScript-based UI development library</li>
         <li>Facebook and an open-source developer community run it</li>
