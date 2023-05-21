@@ -1,23 +1,46 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+function Header() {
+  return (
+    <header>
+      <nav>
+        <img src={require("./logo/react-logo.png")} width={100} />
+      </nav>
+    </header>
+  );
+}
+
+function MainContent () {
+  return (
+    <div>
+      <h1>React Fun Facts</h1>
+      <ol>
+        <li>
+          React is Not a Framework. Even all of the expert React builders say
+          that React is a Javascript framework
+        </li>
+        <li>Virtual DOM is faster than real DOM</li>
+        <li>React Has a Strong Community</li>
+      </ol>
+    </div>
+  );
+}
+
+function Footer () {
+return (
+  <footer>
+    <small> © 2023 All Right Reserved by Chotu Marandi</small>
+  </footer>
+);
+}
+
 function Page () {
   return (
     <div>
-      <header>
-        <nav>
-          <img src={require("./logo/react-logo.png")} width={100} />
-        </nav>
-      </header>
-      <h1>I am excited to learn React</h1>
-      <ol>
-        <li>I am excited to learning React</li>
-        <li>Because it is the most using framework</li>
-        <li>And to a better developer</li>
-      </ol>
-      <footer>
-        <p> © All Right Reserved by Chotu Marandi</p>
-      </footer>
+      <Header />
+      <MainContent />
+      <Footer />
     </div>
   );
 }
