@@ -6,7 +6,7 @@ import MainContent from './MainContent';
 import Footer from './Footer';
 
 
-function Page () {
+function App () {
   return (
     <div className='main-container'>
       <div className='wrapper'>
@@ -18,4 +18,4 @@ function Page () {
   );
 }
 
-ReactDOM.render(<Page />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById('root'))

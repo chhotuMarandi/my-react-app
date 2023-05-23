@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom'
 function MainContent() {
   return (
     <div className='main-content'>
-      <h1>React Js Fun Facts</h1>
+      <h2>React Js Fun Facts</h2>
       <ol className='list-item'>
         <li>React is a JavaScript-based UI development library</li>
         <li>Facebook and an open-source developer community run it</li>
